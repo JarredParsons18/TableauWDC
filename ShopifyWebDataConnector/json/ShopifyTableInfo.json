@@ -1,0 +1,67 @@
+{
+"tables" : [
+	{
+	"id" : "orders",
+	"alias" : "orders",
+	"columns" : [
+		{"id": "id", "alias" : "id", "dataType": "int"},
+		{"id" : "email", "alias" : "email", "dataType" : "string"},
+		{"id" : "created_at", "alias" : "created_at" , "dataType" : "date"},
+		{"id" : "updated_at", "alias" : "updated_at" , "dataType" : "date"},
+		{"id" : "number", "alias", "number", "dataType" : "int"},
+		{"id" : "note", "alias" : "note" , "dataType" : "string"},
+		{"id" : "token", "alias" : "token", "dataType": "string"},
+		{"id" : "gateway", "alias" : "gateway" , "dataType" : "string"},
+		{"id" : "total_price", "alias" : "total_price" , "dataType" : "double"},
+		{"id" : "subtotal_price", "alias" : "subtotal_price", "dataType": "double"},
+		{"id" : "total_weight", "alias" : "total_weight", "dataType" : "double"},
+		{"id" : "total_tax", "alias" : "total_tax", "dataType" : "double"},
+		{"id" : "taxes_included", "alias" : "taxes_included", "dataType" : "boolean"},
+		{"id" : "currency", "alias" : "currency", "dataType" : "string"},
+		{"id" : "financial_status", "alias" : "financial_status", "dataType" : "string"},
+		{"id" : "confirmed", "alias" : "confirmed", "dataType" : "string"},
+		{"id" : "total_discounts" : "alias" : "total_discounts", "dataType" : "double"},
+		{"id" : "total_line_items_price", "alias" : "total_line_items_price", "dataType" : "double"},
+		{"id" : "cart_token" : "alias" : "cart_token", "dataType" : "string"},
+		{"id" : "buyer_accepts_marketing", "alias" : "buyer_accepts_marketing" , "dataType" : "boolean"},
+		{"id" : "name", "alias" : "name", "dataType" : "string"},
+		{"id" : "cancelled_at",  "alias" : "cancelled_at", "dataType" : "date"},
+		{"id" : "cancel_reason", "alias" : "cancel_reason", "dataType" : "string"},
+		{"id" : "total_price_usd", "alias" : "total_price_usd", "dataType" : "double"},
+		{"id" : "checkout_token", "alias" : "checkout_token", "dataType" : "string"},
+		{"id" : "reference", "alias" : "reference", "dataType" : "string"},
+		{"id" : "user_id", "alias" : "user_id", "dataType" : "int"},
+		{"id" : "location_id", "alias" : "location_id", "dataType" : "int"}
+		{"id" : "processed_at", "alias" : "processed_at", "dataType" : "date"},
+		{"id" : "device_id", "alias" : "device_id" , "dataType" : "string"},
+		{"id" : "phone", "alias" : "phone", "dataType" : "string"},
+		{"id" : "customer_locale", "alias" : "customer_locale", "dataType" : "string"},
+		{"id" : "processing_method", "alias", "processing_method", "dataType" : "string"},
+		{"id" : "checkout_id", "alias", "checkout_id", "dataType" : "int"},
+		{"id" : "fulfillment_status", "alias" : "fulfillment_status", "dataType" : "string"},
+		{"id" : "customer_id", "alias" : "customer_id", "dataType" : "int"},
+		{"id" : "line_item_list_id", "alias" : "line_item_list_id", "dataType" : "int"}
+		]
+	},
+	{
+	"id" : "line_item_list",
+	"alias" : "line_item_list",
+	"columns" : [
+		{"id" : "id", "alias" : "id", "dataType" : "int"},
+		{"id" : "order_id", "alias" : "order_id", "dataType" : "int"}
+		]
+	},
+	{"id" : "line_item",
+	 "alias" : "line_item",
+	 "columns" : [
+		{"id" : "id", "alias" : "id", "dataType" : "int"},
+		{"id" : "line_item_list_id", "alias" : "line_item_list_id", "dataType" : "int"},
+		{"id" : "product_id", "alias" : "product_id", "dataType" : "int"},
+		{"id" : "variant_id", "alias" : "variant_id", "dataType" : "int"},
+		{"id" : "quantity", "alias" : "quantity", "dataType" : "int"},
+		{"id" : "price", "alias" : "price", "dataType" : "double"},
+		]
+	
+	}
+]
+}
